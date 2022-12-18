@@ -132,7 +132,7 @@ ul {
     display: block;
     border-radius: 2px;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background-color: #4D5AE5;
     bottom: 0%;
     left: 0%;
@@ -143,7 +143,7 @@ ul {
     display: block;
     border-radius: 2px;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background-color: #4D5AE5;
     bottom: 0%;
     left: 0%;
@@ -204,18 +204,15 @@ padding-right: 32px;
 padding-left: 32px;
 border: solid #4D5AE5;
 box-shadow: 0px 1px  1px  0px  rgba(46, 47, 66, 0.16);
-transition-property: box-shadow, border, background-color;
+transition-property: box-shadow;
 transition-duration: 250ms;
 transition-timing-function: var(--time-function);
 }
 .hero-button:hover {
-    background-color: var(--accent-color);
     box-shadow: 0px 4px  4px  0px  rgba(0, 0, 0, 0.15);
     
 }
 .hero-button:focus {
-    background-color: #404BBF;
-    border: solid #404BBF ;
     box-shadow: 0px 4px  0px  4px  rgba(0, 0, 0, 0.15);
 }
 
@@ -449,7 +446,7 @@ margin-top: 16px;
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
-    transition-property: background-color;
+    transition-property: background-color, box-shadow, color, border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--time-function);
 }
@@ -457,7 +454,7 @@ margin-top: 16px;
     background-color: var(--accent-color);
     border-color: transparent;
     color: var(--button-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .filter-portfolio:focus {
     background-color: var(--accent-color);
@@ -486,6 +483,9 @@ margin-top: 16px;
     text-decoration: none;
     display: block;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
 }
 .portfolio-section:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -559,7 +559,7 @@ background-color: #4D5AE5;
 padding: 40px 32px 164px 32px;
 overflow: auto;
 transform:translate(0, 100%);
-transition: transform 250ms;
+transition: transform 250ms var(--time-function);
 }
 .portfolio-section:hover .overlay,
 .portfolio-section:focus .overlay {
