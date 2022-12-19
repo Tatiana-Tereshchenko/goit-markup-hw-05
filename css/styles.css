@@ -232,7 +232,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-margin-top: 8px;
+
 }
 .section-text {
 line-height: 1.5;
@@ -390,6 +390,7 @@ margin-top: 16px;
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 16px;
+    font-size: 16px;
 }
 .futer-icon {
     display: flex;
@@ -426,6 +427,7 @@ margin-top: 16px;
 }
 .footer {
     display: flex;
+    align-items: baseline;
 }
 
 /*  PAGE2------------portfolio */
@@ -472,8 +474,7 @@ margin-top: 16px;
 }
 .portfolio-text {
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-top: 8px;
+    title-futer    margin-top: 8px;
     color: #434455;
 }
 .section-footer {
